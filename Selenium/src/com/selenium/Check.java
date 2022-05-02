@@ -52,10 +52,11 @@ public class Check {
 		System.out.println(sb);
 		
 		
-		int i =00022003000;String regex ="^0+(?!$)";
-	    String j = Integer.toString(i);
+		int i =00022003000;
+		String regex ="^0+(?!$)";
+	    	String j = Integer.toString(i);
 		 j = j.replaceAll(regex, "");
-		System.out.println(i+1);
+		System.out.println(j);
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 				.withTimeout(Duration.ofSeconds(10))
 				.pollingEvery(Duration.ofSeconds(3))
